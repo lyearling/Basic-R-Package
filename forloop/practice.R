@@ -10,3 +10,16 @@ col_means <- function(df) {
 }
 
 
+count_na <- function(vec) {
+  count <- 0  
+  
+  for (element in vec) {
+    if (is.na(element)) {
+      count <- count + 1
+    }
+  }
+  
+  return(count)
+}
+
+
